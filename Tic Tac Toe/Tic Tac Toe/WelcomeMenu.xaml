@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Window xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"  
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"  
+        xmlns:local="clr-namespace:Views;assembly=FsXamlApp"  
+        xmlns:fsxaml="http://github.com/fsprojects/FsXaml"    
+        Title="Tic Tac Toe" Height="640" Width="640" FontFamily="Showcard Gothic">
+
+    <Grid>
+        <TextBlock Margin="93,10,93.6,565.4"
+                   Background="AntiqueWhite" 
+                   Foreground="Blue" 
+                    FontFamily="Century Gothic"
+                    FontSize="20"
+                   TextAlignment="Center"
+                   >
+            Welcome To Tic Tac Toe
+        </TextBlock>
+        <Button x:Name="startbtn" 
+                Margin="228,92,253.6,473.4" 
+                Content="Start Game">
+        </Button>
+        <Button x:Name="quitbtn" 
+                Margin="228,176,253.6,389.4" 
+                Content="Quit Game">
+        </Button>
+    </Grid>
+    
+
+</Window>  

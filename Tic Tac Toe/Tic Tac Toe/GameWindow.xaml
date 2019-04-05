@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Window xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"  
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"  
+        xmlns:local="clr-namespace:Views;assembly=FsXamlApp"  
+        xmlns:fsxaml="http://github.com/fsprojects/FsXaml"    
+        Title="Tic Tac Toe" Height="640" Width="640">
+
+    <Grid x:Name = "GameBoard" Background = "LightBlue">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height = "*" />
+            <RowDefinition Height = "*" />
+            <RowDefinition Height = "*" />
+            <RowDefinition Height = "*" />
+        </Grid.RowDefinitions>
+        <Button Grid.Row="0" Grid.Column="0" x:Name="btn1" Content="X" Cursor="Hand" Background="LightSeaGreen" FontSize="72" FontFamily="Verdana" FontWeight="Bold"></Button>
+        <Button Grid.Row="0" Grid.Column="1" x:Name="btn2" Content="O" Cursor="Hand" Background="LightSeaGreen" FontSize="72" FontFamily="Verdana" FontWeight="Bold"></Button>
+        <Button Grid.Row="0" Grid.Column="2" x:Name="btn3" Content="X" Cursor="Hand" Background="LightSeaGreen" FontSize="72" FontFamily="Verdana" FontWeight="Bold"></Button>
+        <Button Grid.Row="1" Grid.Column="0" x:Name="btn4" Content="O" Cursor="Hand" Background="LightSeaGreen" FontSize="72" FontFamily="Verdana" FontWeight="Bold"></Button>
+        <Button Grid.Row="1" Grid.Column="1" x:Name="btn5" Content="O" Cursor="Hand" Background="LightSeaGreen" FontSize="72" FontFamily="Verdana" FontWeight="Bold"></Button>
+        <Button Grid.Row="1" Grid.Column="2" x:Name="btn6" Content="x" Cursor="Hand" Background="LightSeaGreen" FontSize="72" FontFamily="Verdana" FontWeight="Bold"></Button>
+        <Button Grid.Row="2" Grid.Column="0" x:Name="btn7" Content="O" Cursor="Hand" Background="LightSeaGreen" FontSize="72" FontFamily="Verdana" FontWeight="Bold"></Button>
+        <Button Grid.Row="2" Grid.Column="1" x:Name="btn8" Content="X" Cursor="Hand" Background="LightSeaGreen" FontSize="72" FontFamily="Verdana" FontWeight="Bold"></Button>
+        <Button Grid.Row="2" Grid.Column="2" x:Name="btn9" Content="X" Cursor="Hand" Background="LightSeaGreen" FontSize="72" FontFamily="Verdana" FontWeight="Bold"></Button>
+        <Button  Grid.Row="3" x:Name="restartbtn" Content="&#10227; Restart" Cursor="Hand" Background="LightSalmon" Grid.ColumnSpan="2" Margin="211,0.4,0.4,68.4" FontSize="24" FontFamily="Stencil" FontWeight="Bold"/>
+        <Button  Grid.Row="3" x:Name="mainmenubtn" Content="&#127968; Main Menu " Cursor="Hand" Background="OrangeRed" Grid.ColumnSpan="2" Margin="211,84.4,0.4,0.4" FontSize="24" FontFamily="Stencil" FontWeight="Bold"/>
+<!--Need to make textblock text value changable,, need to assign event handler to the buttons or when clicked to run function-->
+        <TextBlock Grid.Row="3" Grid.Column="0" Text="X" TextAlignment="Center" Background="LightGreen" Margin="0,0.4,0.2,95.4" FontSize="42" FontFamily="Verdana" FontWeight="Bold"/>
+        <TextBlock Name="scoreofx" Grid.Row="3" Grid.Column="0" Text="123" TextAlignment="Center" Background="AliceBlue" Margin="0,56.4,0.2,0.4"></TextBlock>
+
+        <TextBlock Grid.Row="3" Grid.Column="1" Text="O" TextAlignment="Center" Background="LightGreen" Margin="210.8,0.4,0.6,96.4" FontSize="42" FontFamily="Verdana" FontWeight="Bold" Grid.ColumnSpan="2"></TextBlock>
+        <TextBlock Name="scoreofo" Grid.Row="3" Grid.Column="2" Text="{Binding Strength}" TextAlignment="Center" Background="AliceBlue" Margin="0.6,56.4,-0.4,0.4"></TextBlock>
+    </Grid>
+
+
+
+</Window>  
